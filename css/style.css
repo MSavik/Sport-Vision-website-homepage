@@ -1,0 +1,2492 @@
+/*=============================================================== 
+ *                                                               *
+ * --------------------------------------------------------------*
+ *                      TABLE OF CONTENTS                        *
+ * --------------------------------------------------------------*
+ *
+ *  1. Global Variables & Selectors
+ *
+ *  2. iPhone Responsive Styles
+ *      2.1. Header
+ *          2.1.1. Top Navigation
+ *          2.1.2. Logo
+ *          2.1.3. Search Form
+ *          2.1.4. Navigation Menu
+ *      2.2. Main
+ *          2.2.1. Banner
+ *          2.2.2. Info
+ *              2.2.2.1. Reasons
+ *              2.2.2.2. Brands
+ *              2.2.2.3. Categories
+ *          2.2.3. Sale
+ *              2.2.3.1. Items On Sale
+ *              2.2.3.2. Sign Up Form
+ *      2.3. Footer
+ *
+ *  3. iPad Responsive Styles
+ *      3.1. Header
+ *          3.1.1. Top Navigation
+ *          3.1.2. Logo
+ *          3.1.3. Search Form
+ *          3.1.4. Navigation Menu
+ *      3.2. Main
+ *          3.2.1. Banner
+ *          3.2.2. Info
+ *              3.2.2.1. Reasons
+ *              3.2.2.2. Brands
+ *              3.2.2.3. Categories
+ *          3.2.3. Sale
+ *              3.2.3.1. Items On Sale
+ *              3.2.3.2. Sign Up Form
+ *      3.3. Footer
+ *
+ *  4. Desktop Responsive Styles
+ *      4.1. Header
+ *          4.1.2. Logo
+ *          4.1.4. Navigation Menu
+ *      4.2. Main
+ *          4.2.1. Banner
+ *          4.2.2. Info
+ *              4.2.2.1. Reasons
+ *              4.2.2.2. Brands
+ *              4.2.2.3. Categories
+ *          4.2.3. Sale
+ *              4.2.3.1. Items On Sale
+ *              4.2.3.2. Sign Up Form
+ *      4.3. Footer
+ *
+=================================================================*/
+
+
+/* ===================================*
+ *  1. Global Variables & Selectors   *
+ *====================================*/
+
+:root {
+    --nav-menu-width: 4px;
+
+    --black-rock: #30323d;
+    --sunset-orange: #ff5050;
+    --dark-gray: #ADADAD;
+    --white-smoke: #F6F6F6;
+
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-poppins: Poppins, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+/* ===============================*
+ *  2. iPhone Responsive Styles   *
+ *================================*/
+/* ----------------*
+ *   2.1. Header   *
+ *-----------------*/
+#header-main {
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+
+/* 2.1.1. Top Navigation */
+#navigation-main {
+    padding-top: 24px;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+}
+.navigation-1 {
+    width: 100%;
+}
+.navigation-2 {
+    width: 226px;
+}
+.nav-item-group {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.nav-item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.nav-item > * {
+    position: relative;
+}
+.nav-item > .text-wrapper span {
+    text-decoration: none;
+    color: var(--black-rock);
+    font-size: 12px;
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+    display: inline-block;
+    margin: auto;
+    padding-left: 5px;
+    font-weight: 700;
+}
+.badge-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 16px;
+    height: 16px;
+    background-color: var(--sunset-orange);
+    border: 2px solid white;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-transform: translate(-2px, -8px);
+        -ms-transform: translate(-2px, -8px);
+            transform: translate(-2px, -8px);
+    z-index: 2;
+}
+.badge {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-family: var(--font-open-sans);
+    font-size: 9px;
+    font-weight: 900;
+    line-height: 10.55px;
+    color: var(--white-smoke);
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* 2.1.2. Logo */
+#suprfit-logo {
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+#suprfit-logo img {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 200px;
+}
+
+/* 2.1.3. Search Form */
+#search {
+    background: white;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+#search-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin: auto;
+    border: 2px solid var(--black-rock);
+    border-radius: 4px;
+    margin: 20px auto;
+    height: 40px;
+}
+#search-form > div:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 44px !important;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+#search-form > div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+#search-form button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    outline: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+#search-form input {
+    display: inline-block;
+    border: none;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    font-family: var(--font-open-sans);
+    font-weight: 500;
+}
+
+/* 2.1.4. Navigation Menu */
+#navigation-menu {
+    height: 50px;
+    background-color: var(--black-rock);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: var(--nav-menu-width) solid var(--sunset-orange);
+}
+#navigation-menu > div {
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.sandwich-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+}
+.sandwich {
+    padding-left: 15px;
+    padding-right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.sandwich div {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #C4C4C4;
+    margin: 1.5px 0;
+    padding: 0px;
+}
+
+#navigation-menu > span {
+    color: var(--dark-gray);
+    font-family: var(--font-open-sans);
+    line-height: 32px;
+    font-size: 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    font-weight: 900;
+}
+.dropdown-menu {
+    position: absolute;
+    width: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: var(--black-rock);
+    z-index: 3;
+    height: 568px;
+    top: 241.5px;
+    visibility: hidden;
+    border-top: var(--nav-menu-width) solid var(--sunset-orange);
+}
+.dropdown-menu > div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    border: none;
+    width: 100%;
+    height: 57px;
+    position: relative;
+}
+.dropdown-menu > div:first-child span {
+    font-family: var(--font-poppins);
+    font-size: 26.6897px;
+    line-height: 33px;
+    font-weight: 900;
+    color: white;
+    position: relative;
+    padding: 12.31px 0px 12.7px 12px;
+}
+.dropdown-menu ul {
+    width: 100%;
+}
+.dropdown-menu ul > li > a {
+    border-bottom: 1px solid var(--dark-gray);
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 36px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-decoration: none;
+}
+.dropdown-menu ul > li > a > div {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    
+}
+.dropdown-menu ul > li > a > div:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.dropdown-menu ul > li > a > div:nth-child(2) {
+    width: 51px;
+}
+.dropdown-menu ul > li > a > div span {
+    color: white;
+    padding-left: 12px;
+    font-family: var(--font-open-sans);
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+}
+.dropdown-menu ul > li:hover > a > div > span {
+    color: var(--sunset-orange);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.dropdown-menu ul > li:hover > a > div > img {
+    content: url('../media/iPhone/List-arrow-hover.png');
+    width: 9px;
+}
+
+
+/* --------------*
+ *   2.2. Main   *
+ *---------------*/
+
+ /* 2.2.1. Banner */
+#banner {
+    height: 260px;
+    width: 100%;
+    background: url("../media/Desktop/Banner-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+.carousel-menu-banner {
+    width: 100%;
+    height: 100%;
+}
+.owl-carousel-banner {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+.owl-carousel-banner .item {
+    width: 100%;
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50% 50%;
+}
+.owl-carousel-banner .owl-stage-outer {
+    height: 100%;
+}
+.owl-carousel-banner .owl-stage {
+    height: 100%;
+}
+.owl-carousel-banner .owl-stage .owl-item {
+    height: 100%;
+}
+.owl-carousel-banner .owl-item .item {
+    height: 100%;
+    margin-left: 50%;
+}
+#banner .banner-link {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+#banner .banner-link .text {
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+#banner .banner-link .text span {
+    font-family: var(--font-poppins);
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 32px;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.4);
+}
+#banner .banner-link .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+#banner .banner-link .button .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+    border-radius: 4px;
+    background-color: var(--sunset-orange);
+    width: 168px;
+    height: 36px;
+    top: 19px;
+    text-decoration: none;
+    z-index: 1;
+}
+#banner .banner-link .button .btn span {
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 16px;
+    font-family: var(--font-open-sans);
+    font-weight: 900;
+    margin: auto;
+}
+
+/* 2.2.2. Info */
+.why-suprfit {
+    margin-top: 42px;
+}
+.why-suprfit > h1 {
+    display: inline;
+    font-family: var(--font-poppins);
+    color: var(--black-rock);
+    font-size: 32px;
+    text-align: center;
+    font-weight: 900;
+    display: block;
+}
+
+/* 2.2.2.1. Reasons */
+.reasons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 27px;
+    position: relative;
+}
+.reason-wrapper {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.reason-wrapper .reason {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.reason-wrapper .reason > div:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 61px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.reason-wrapper .reason > div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.reason-wrapper .reason > div:nth-child(2) span{
+    font-family: var(--font-open-sans);
+    font-weight: 500;
+    color: var(--black-rock);
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.reason-wrapper:last-child {
+    width: 100%;
+}
+.reason-wrapper .reason > div > img {
+    width: 60px;
+}
+
+#banner-2 {
+    position: relative;
+    margin-bottom: 50px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(16.66%, white), color-stop(16.66%, var(--sunset-orange)), color-stop(77.95%, white));
+    background: -o-linear-gradient(top, white 16.66%, var(--sunset-orange) 16.66% 77.95%, white 77.95%);
+    background: linear-gradient(to bottom, white 16.66%, var(--sunset-orange) 16.66% 77.95%, white 77.95%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+#banner-2 > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    left: 8.5px;
+}
+#banner-2 > div > img {
+    z-index: 2;
+    position: relative;
+    width: 275px;
+    height: 322px;
+}
+
+/* 2.2.2.2. Brands */
+#carousel-menu-1 {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+}
+#carousel-menu-1 .owl-carousel-1 {
+    width: 70%;
+}
+#carousel-menu-1 .owl-stage-outer {
+    height: 19px;
+}
+#carousel-menu-1 .owl-stage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 100%;
+}
+#carousel-menu-1 .owl-stage .owl-item {
+    display: inline-block;
+    height: 100%;
+}
+#carousel-menu-1 .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+}
+#carousel-menu-1 .item a {
+    height: 100%;
+}
+#carousel-menu-1 .item img {
+    height: 100%;
+}
+#carousel-menu-1 .owl-nav {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    bottom: 50%;
+    margin: 0;
+    z-index: -1;
+}
+#carousel-menu-1 .owl-nav button {
+    margin: 0 -20%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    outline: none;
+    z-index: 1;
+}
+#carousel-menu-1 .owl-nav button:hover {
+    background: none;
+}
+#carousel-menu-1 .owl-nav button img {
+    width: 100%;
+    height: 15px;
+}
+
+/* 2.2.2.3. Categories */
+.why-suprfit-2 {
+    height: 66px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 24px;
+    background-color: var(--white-smoke);
+}
+.why-suprfit-2 > h1::after {
+    content: "WE OFFER";
+}
+
+#categories {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: var(--white-smoke);
+}
+#categories a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 200px;
+    margin-bottom: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    position: relative;
+}
+#categories a div {
+    position: absolute;
+    bottom: 15px;
+}
+#categories a:nth-child(1) {
+    display: block;
+    background-image: url('../media/iPad/Shoes-banner.jpg');
+}
+#categories a:nth-child(2) {
+    display: block;
+    background-image: url('../media/iPad/T-shirt-banner.jpg');
+    
+}
+#categories a:nth-child(3) {
+    display: block;
+    background-image: url('../media/iPad/Bags-banner.jpg');
+    
+}
+#categories a div span {
+    font-family: var(--font-poppins);
+    font-size: 22px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    left: 10px;
+}
+
+/* 2.2.3. Sale */
+#on-sale {
+    position: relative;
+    background-color: var(--white-smoke);
+}
+.on-sale-now h1{
+    font-family: var(--font-poppins);
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--black-rock);
+    line-height: 29px;
+    text-align: center;
+    padding-top: 79px;
+}
+
+/* 2.2.3.1. Items On Sale */
+#carousel-menu-2 {
+    margin-bottom: 66.77px;
+    height: calc(229px + 2 * 38px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+#carousel-menu-2 .owl-carousel-2 {
+    height: 100%;
+    width: 521px;
+}
+#carousel-menu-2 .owl-stage-outer {
+    height: 100%;
+    overflow: hidden;
+}
+#carousel-menu-2 .owl-stage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+}
+#carousel-menu-2 .owl-stage .owl-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+#carousel-menu-2 .owl-stage .owl-item.center {
+    -webkit-box-shadow: 0 14.1px 22.48px -10.1px rgba(48, 50, 61, 0.6);
+            box-shadow: 0 14.1px 22.48px -10.1px rgba(48, 50, 61, 0.6);
+    -webkit-transition: -webkit-box-shadow 0.5s;
+    transition: -webkit-box-shadow 0.5s;
+    -o-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+#carousel-menu-2 .owl-stage .item {
+    width: 161.57px !important;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 212.15px;
+    border: 0.702499px solid #C7C7C7;
+    border-radius: 2.1075px;
+    overflow: hidden !important;
+    background-color: white;
+}
+#carousel-menu-2 .owl-stage .owl-item.center .item {
+    height: 229px !important;
+    -webkit-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    transition: height 0.5s;
+}
+#carousel-menu-2 .owl-stage .owl-item:not(.center) .item {
+    -webkit-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    transition: height 0.5s;
+}
+#carousel-menu-2 .owl-stage .item div:nth-child(1) {
+    height: 108.89px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+#carousel-menu-2 .owl-stage .owl-item.center .item div:nth-child(1) {
+    height: 125.04px;
+    -webkit-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    transition: height 0.5s;
+}
+#carousel-menu-2 .owl-stage .owl-item:not(.center) .item div:nth-child(1) {
+    -webkit-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    transition: height 0.5s;
+}
+#carousel-menu-2 .owl-stage .item div:nth-child(1) > span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+#carousel-menu-2 .owl-stage .item div:nth-child(1) > span > img {
+    margin: auto;
+}
+#carousel-menu-2 .owl-stage .owl-item.center .item div:nth-child(1) > span > img {
+    -webkit-transform: scale(1.07617, 1.07617);
+        -ms-transform: scale(1.07617, 1.07617);
+            transform: scale(1.07617, 1.07617);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}
+#carousel-menu-2 .owl-stage .item div:nth-child(2) {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 7.02px;
+}
+#carousel-menu-2 .owl-stage .item div:nth-child(2) > span {
+    font-family: var(--font-open-sans);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10.5375px;
+    line-height: 12px;
+    text-align: center;
+    color: var(--black-rock);
+}
+#carousel-menu-2 .owl-stage .item div:nth-child(3) {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 2.81px;
+}
+#carousel-menu-2 .owl-stage .item div:nth-child(3) > span {
+    font-family: var(--font-open-sans);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.5375px;
+    color: var(--dark-gray);
+    text-decoration: line-through;
+    line-height: 12px;
+    text-align: center;
+}
+#carousel-menu-2 .owl-stage .item div:nth-child(4) {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10.54px;
+}
+#carousel-menu-2 .owl-stage .item div:nth-child(4) > span {
+    font-family: var(--font-open-sans);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14.05px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--black-rock);
+}
+#carousel-menu-2 .owl-stage .item div:nth-child(5) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+#carousel-menu-2 .owl-stage .item div:nth-child(5) > button {
+    width: 105.37px;
+    height: 23.53px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: var(--sunset-orange);
+    border-radius: 1.405px;
+    text-decoration: none;
+    font-family: var(--font-open-sans);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 7.72749px;
+    line-height: 9px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* 2.2.3.2. Sign Up Form */
+#sign-up {
+    position: relative;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--white-smoke)), color-stop(50%, var(--sunset-orange)));
+    background: -o-linear-gradient(top, var(--white-smoke) 50%, var(--sunset-orange) 50%);
+    background: linear-gradient(to bottom, var(--white-smoke) 50%, var(--sunset-orange) 50%);
+    padding-bottom: 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+#sign-up::after {
+    content: '';
+    background-color: black;
+    width: 80%;
+    max-width: calc(580px * 0.8);
+    height: 252px;
+    top: 10%;
+    margin: 0 auto;
+    opacity: 0.6;
+    -webkit-filter: blur(15px);
+            filter: blur(15px);
+    position: absolute;
+    display: inline-block;
+    z-index: 0;
+}
+.sign-up-box {
+    position: relative;
+    display: block;
+    margin: 0px 16px;
+    background-color: var(--black-rock);
+    height: 257px;
+    border-radius: 10px;
+    max-width: 580px;
+    z-index: 1;
+}
+.sign-up-box div:nth-child(1) {
+    height: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.sign-up-box div:nth-child(1) span {
+    font-family: var(--font-poppins);
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+    color: var(--sunset-orange);
+    text-align: center;
+}
+.sign-up-box div:nth-child(2) {
+    height: 37px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 12px 20px 20px 20px;
+}
+.sign-up-box div:nth-child(2) span {
+    font-family: var(--font-open-sans);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+}
+.sign-up-box div:nth-child(3) {
+    height: 41px;
+    margin-bottom: 25px;
+}
+.sign-up-box div:nth-child(3) > input {
+    display: block;
+    border: 2px solid white;
+    border-radius: 6px;
+    height: 100%;
+    width: 200px;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: var(--black-rock);
+    text-align: center;
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+}
+.sign-up-box div:nth-child(4) {
+    height: 38px;
+    margin: 0 68px 29px 68px;
+}
+.sign-up-box div:nth-child(4) > input {
+    display: block;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: var(--sunset-orange);
+    border-radius: 4px;
+    height: 38px;
+    width: 151px;
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-open-sans);
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ----------------*
+ *   2.3. Footer   *
+ *-----------------*/
+#footer-main{
+    position: relative;
+    background-color: var(--white-smoke);
+}
+.link-categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: var(--black-rock);
+    padding-top: 50px;
+}
+
+.link-categories section {
+    width: 50%;
+    margin-bottom: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.links {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+.links > div:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+}
+.links > div:nth-child(1) > h2 {
+    font-family: var(--font-open-sans);
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 15px;
+}
+.links > div:nth-child(2) {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+.links > div:nth-child(2) ul {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+.links > div:nth-child(2) ul li {
+    list-style-type: none;
+    display: block;
+}
+.links > div:nth-child(2) ul li a {
+    text-decoration: none;
+    color: darkslategray;
+    font-family: var(--font-open-sans);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 25.23px;
+}
+.links > div:nth-child(2) ul li a:hover {
+    color: var(--sunset-orange);
+    text-decoration: underline;
+}
+
+.payment-methods > div:nth-child(2), .shipping-options > div:nth-child(2) {
+    padding: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.payment-methods > div:nth-child(2) ul, .shipping-options > div:nth-child(2) ul {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.payment-methods > div:nth-child(2) ul li, .shipping-options > div:nth-child(2) ul li {
+    margin-bottom: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+/* 2.3.5. Social Media Links */
+.link-categories section:last-child {
+    width: 100%;
+}
+.payment-methods > div > ul > li > img {
+    height: 20px;
+}
+.shipping-options > div > ul > li > img {
+    height: 20px;
+}
+.social-media-links > div:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.social-media-links > div:nth-child(1) > h2 {
+    text-align: center;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 18.75px;
+}
+.social-media-links > div:nth-child(2) {
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+}
+.social-media-links > div:nth-child(2) ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+}
+.social-media-links > div:nth-child(2) ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+.social-media-links > div:nth-child(2) ul li img{
+    width: 46px;
+}
+
+.copyright {
+    background-color: #2A2C36;
+    color: var(--dark-gray);
+    text-align: center;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--font-open-sans);
+    line-height: 15px;
+}
+
+.ipad  {
+    display: none;
+}
+.desktop {
+    display: none;
+}
+
+
+
+/* =============================*
+ *  3. iPad Responsive Styles   *
+ *==============================*/
+
+@media only screen and (min-width: 1024px) {
+    
+    .iphone {
+        display: none;
+    }
+
+    /* ----------------*
+     *   3.1. Header   *
+     *-----------------*/
+
+     /* 3.1.1. Top Navigation */
+    #navigation-menu > .iphone {
+        display: none;
+    }
+    #navigation-main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        width: 100%;
+        padding-top: 19px;
+        position: relative;
+        padding: 19px 25px 0px 0px;
+    }
+    .navigation-1 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+    }
+    .navigation-2 {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+    }
+
+    .navigation-1 .nav-item-group {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .navigation-2 .nav-item-group {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .nav-item {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-right: 15px;
+    }
+    #navigation-main > .nav-item span {
+        margin-top: 9px;
+    }
+
+    /* 3.1.2. Logo */
+    #suprfit-logo a {
+        display: block;
+        position: relative;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        margin: 0 auto;
+    }
+    #suprfit-logo a img {
+        margin: 0;
+        width: 250px;
+    }
+
+    /* 3.1.3. Search Form */
+    #search-form {
+        height: 50px;
+        margin: 40px auto 50px auto;
+        width: 714px;
+    }
+    #search-form > div:nth-child(1) {
+        width: 39px;
+    }
+    #search-form > div:nth-child(2) {
+        width: 675px;
+    }
+
+    /* 3.1.4. Navigation Menu */
+    #navigation-menu {
+        height: 60px;
+    }
+    .menu-items {
+        display: block;
+        width: 100%;
+    }
+    .menu-items > ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .menu-items > ul > li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        border-right: 1px solid rgba(255, 255, 255, .2);
+        padding: 0 20px;
+        cursor: pointer;
+    }
+    .menu-items > ul > li:last-child {
+        border: none;
+    }
+    .menu-items > ul > li > a {
+        text-decoration: none;
+        font-family: var(--font-open-sans);
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        color: white;
+    }
+    .menu-items > ul > li:hover > a {
+        color: var(--sunset-orange);
+    }
+
+    /* --------------*
+     *   3.2. Main   *
+     *---------------*/
+
+    /* 3.2.1. Banner */
+    #banner {
+        height: 1100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #banner .banner-link {
+        bottom: 107px;
+    }
+    #banner .banner-link .text span {
+        font-family: var(--font-poppins);
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 88px;
+    }
+    #banner .banner-link .button .btn {
+        width: 292px;
+        height: 67px; 
+        top: 0;
+        margin-top: 43px;
+    }
+    #banner .banner-link .button .btn span {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    /* 3.2.2. Info */
+    /* 3.2.2.1. Reasons */
+    .why-suprfit-1 {
+        margin-top: 69px;
+    }
+    .why-suprfit-1 > h1 {
+        font-size: 72px;
+    }
+    .reasons-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .reasons {
+        margin-top: 100px;
+    }
+    .reason-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 53px;
+    }
+    .reason-wrapper .reason {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        width: 529px; /* sirina najveceg elementa */
+        padding-left: 56px; /* izracunata razdaljina od leve ivice */
+        -webkit-box-sizing: content-box;
+                box-sizing: content-box;
+    }
+    .reason-wrapper .reason > div > img {
+        width: 120px;
+    }
+    .reason-wrapper > .reason > div:nth-child(1) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 100px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 140px;
+    }
+    .reason-wrapper > .reason > div:nth-child(2) > span {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 32px;
+        line-height: 37px;
+        margin: 0;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        white-space: nowrap;
+    }
+    .reason-wrapper:last-child {
+        width: 100%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 87px;
+        padding-left: 0;
+        margin-right: 60px;
+    }
+
+    #banner-2 {
+        position: relative;
+        margin-bottom: 88px;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(16.66%, white), color-stop(14.6%, var(--sunset-orange)), color-stop(77.95%, white));
+        background: -o-linear-gradient(top, white 16.66%, var(--sunset-orange) 14.6% 77.95%, white 77.95%);
+        background: linear-gradient(to bottom, white 16.66%, var(--sunset-orange) 14.6% 77.95%, white 77.95%);
+    }
+    #banner-2 > div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        left: 30px;
+    }
+    #banner-2 > div > img {
+        z-index: 2;
+        position: relative;
+        height: 711px;
+        width: 608px;
+    }
+    
+    /* 3.2.2.2. Brands */
+    #carousel-menu-1 .owl-stage-outer {
+        height: 55px;
+    }
+    #carousel-menu-1 .owl-nav {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+    #carousel-menu-1 .owl-nav button {
+        margin: 0 -12%;
+    }
+    #carousel-menu-1 .owl-nav button img{
+        height: 43px;
+    }
+
+    /* 3.2.2.3. Categories */
+    .why-suprfit-2 {
+        height: 282px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-top: 67px;
+    }
+    .why-suprfit-2 > h1 {
+        font-size: 82px;
+    }
+    .why-suprfit-2 > h1::after {
+        content: "TOP CATEGORIES";
+    }
+
+    #categories a {
+        margin-bottom: 27px;
+        background-size: cover;
+        height: 624px;
+    }
+    #categories a div {
+        bottom: 60px;
+    }
+    #categories a div span {
+        font-size: 82px;
+        left: 60px;
+    }
+
+    /* 3.2.3. Sale */
+    .on-sale-now h1{
+        font-family: var(--font-poppins);
+        font-size: 82px;
+        font-weight: 900;
+        line-height: 100px;
+        text-align: center;
+        padding-top: 183px;
+        padding-bottom: 0;
+    }
+    
+    /* 3.2.3.1. Items On Sale */
+    #carousel-menu-2 {
+        margin-bottom: 85px;
+        height: 850px;
+    }
+    #carousel-menu-2 .owl-carousel-2 {
+        width: 1480px;
+    }
+    #carousel-menu-2 .owl-stage .owl-item.center {
+        -webkit-box-shadow: 0 62px 64px -25px rgba(48, 50, 61, 0.4);
+                box-shadow: 0 62px 64px -25px rgba(48, 50, 61, 0.4);
+    }
+    #carousel-menu-2 .owl-stage .item {
+        width: 460px !important;
+        height: 604px;
+        border: 2px solid #C7C7C7;
+        border-radius: 6px;
+    }
+    #carousel-menu-2 .owl-stage .owl-item.center .item {
+        height: 650px !important;
+    }
+    #carousel-menu-2 .owl-stage .item div:nth-child(1) {
+        height: 310px;
+    }
+    #carousel-menu-2 .owl-stage .owl-item.center .item div:nth-child(1) {
+        height: 356px;
+    }
+    img[src*="On-sale-1"] {
+        width: 314px !important;
+    }
+    img[src*="On-sale-2"] {
+        width: 331.784px !important;
+    }
+    img[src*="On-sale-3"] {
+        width: 247px !important;
+    }
+    #carousel-menu-2 .owl-stage .item div:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    #carousel-menu-2 .owl-stage .item div:nth-child(2) > span {
+        font-size: 30px;
+        line-height: 35.16px;
+    }
+    #carousel-menu-2 .owl-stage .item div:nth-child(3) {
+        margin-bottom: 8px;
+    }
+    #carousel-menu-2 .owl-stage .item div:nth-child(3) > span {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    #carousel-menu-2 .owl-stage .item div:nth-child(4) {
+        margin-bottom: 30px;
+    }
+    #carousel-menu-2 .owl-stage .item div:nth-child(4) > span {
+        font-size: 40px;
+        line-height: 47px;
+    }
+    #carousel-menu-2 .owl-stage .item div:nth-child(5) > button {
+        width: 300px;
+        height: 67px;
+        font-size: 22px;
+        line-height: 25.78px;
+        border-radius: 4px;
+    }
+
+    /* 3.2.3.2. Sign Up Form */
+    #sign-up {
+        padding-bottom: 90px;
+    }
+    #sign-up::after {
+        max-width: 801px;
+        height: 528px;
+        -webkit-filter: blur(35px);
+                filter: blur(35px);
+    }
+    .sign-up-box {
+        margin: 0px 72px;
+        height: 560px;
+        max-width: 1346px;
+    }
+    .sign-up-box div:nth-child(1) {
+        height: 143px;
+        margin-bottom: 32px;
+    }
+    .sign-up-box div:nth-child(1) span {
+        font-size: 62px;
+        line-height: 76px;
+    }
+    .sign-up-box div:nth-child(2) {
+        height: 65px;
+        margin: 32px 94px 29px 94px;
+        width: 693px;
+    }
+    .sign-up-box div:nth-child(2) span {
+        font-size: 23px;
+        line-height: 32px;
+    }
+    .sign-up-box div:nth-child(3) {
+        height: 73px;
+    }
+    .sign-up-box div:nth-child(3) > input {
+        height: 100%;
+        width: 604px;
+        height: 100%;
+        font-size: 23px;
+        line-height: 27px;
+    }
+    .sign-up-box div:nth-child(4) {
+        height: 67px;
+        margin: 60px 294px 91px 295px;
+    }
+    .sign-up-box div:nth-child(4) > input {
+        height: 100%;
+        width: 292px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    
+    /* ----------------*
+     *   3.1. Footer   *
+     *-----------------*/
+
+    .link-categories {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 148px 45.75px 65px 45.75px;
+    }
+    .link-categories section {
+        width: 25%;
+        margin-bottom: 0px;
+    }
+    .links > div:nth-child(1) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 30px;
+    }
+    .links > div:nth-child(1) h2 {
+        font-family: var(--font-open-sans);
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .payment-methods, .shipping-options {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .payment-methods > div:nth-child(1) > h2, .shipping-options > div:nth-child(1) > h2 {
+        margin: 0 auto;
+    }
+    .links > div:nth-child(2) {
+        width: 100%;
+    }
+    .customer-service-links > div:nth-child(2), .information-links > div:nth-child(2) {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .customer-service-links > div:nth-child(2) ul, .information-links > div:nth-child(2) ul {
+        height: 191px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .payment-methods > div:nth-child(2), .shipping-options > div:nth-child(2) {
+        padding: 0;
+        margin: 0 auto;
+        height: 150px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .links > div:nth-child(2) ul li a {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23.44px;
+    }
+    
+    .payment-methods > div:nth-child(2) ul, .shipping-options > div:nth-child(2) ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        height: 150px;
+    }
+    .payment-methods > div:nth-child(2) ul li, .shipping-options > div:nth-child(2) ul li {
+        margin-bottom: 0px;
+    }
+    .social-media-links  {
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 72px;
+    }
+    .social-media-links > div:nth-child(1) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 30px;
+    }
+    .social-media-links > div:nth-child(1) > h2 {
+        text-align: center;
+        margin: 0px;
+    }
+    .social-media-links > div:nth-child(2) {
+        width: 100%;
+        margin-left: 0px;
+        padding: 0px;
+    }
+    .social-media-links > div:nth-child(2) ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+    }
+    .social-media-links > div:nth-child(2) ul li {
+        display: inline-block;
+    }
+    .social-media-links > div:nth-child(2) ul li img {
+        width: 56px;
+    }
+    .payment-methods > div > ul > li > img {
+        height: 35px;
+    }
+    .shipping-options > div > ul > li > img {
+        height: 35px;
+    }
+
+    .copyright {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+/* ================================*
+ *  4. Desktop Responsive Styles   *
+ *=================================*/
+
+@media only screen and (min-width: 1920px) {
+
+    /* ----------------*
+     *   4.1. Header   *
+     *-----------------*/
+
+     /* 4.1.2. Logo */
+    #suprfit-logo img {
+        margin: 0;
+    }
+
+    /* 4.1.4. Navigation Menu */
+    .dropdown-lists {
+        --offset: 4px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: absolute;
+        height: 0px !important;
+        width: 100%;
+        top: calc(340px - var(--offset) - var(--nav-menu-width));
+        z-index: 1;
+    }
+    .dropdown-lists-container {
+        width: 959.158px;
+        display: block;
+        position: relative;
+        top: 0;
+        left: -1px;
+    }
+    .dropdown-lists-container .dropdown-list {
+        position: absolute;
+        width: 300px;
+        height: calc(36px * 7 + var(--nav-menu-width) + var(--offset));
+        top: -13px;
+        left: 0;
+        visibility: hidden;
+        -webkit-box-sizing: content-box;
+                box-sizing: content-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+    }
+    .dropdown-lists-container .dropdown-list ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+    }
+    .dropdown-lists-container .dropdown-list ul > li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 36px;
+        background-color: var(--black-rock);
+        border-bottom: 1px solid var(--dark-gray);
+    }
+    .dropdown-lists .dropdown-lists-container .dropdown-list ul > li:hover > a div span {
+        color: var(--sunset-orange);
+        -webkit-transition: 0.3;
+        -o-transition: 0.3;
+        transition: 0.3;
+    }
+    .dropdown-lists-container .dropdown-list ul > li:hover > a div img {
+        content: url('../media/iPhone//List-arrow-hover.png');
+        width: 9px;
+    }
+    .dropdown-lists-container .dropdown-list ul > li:last-child {
+        border: none;
+    }
+    .dropdown-lists-container .dropdown-list ul > li > a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%;
+        text-decoration: none;
+    }
+    .dropdown-lists-container .dropdown-list ul > li > a > div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 100%;
+    }
+    .dropdown-lists-container .dropdown-list ul > li > a > div:nth-child(1) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+    .dropdown-lists-container .dropdown-list ul > li > a > div:nth-child(1) span{
+        font-family: var(--font-open-sans);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        color: white;
+        margin-left: 12px;
+    }
+    .dropdown-lists-container .dropdown-list ul > li > a > div:nth-child(2) {
+        width: 51px;
+    }
+    .dropdown-lists-container .dropdown-list-1 {
+        left: 183px;
+    }
+    .dropdown-lists-container .dropdown-list-2 {
+        left: calc(183px + 74.25px);
+    }
+    .dropdown-lists-container .dropdown-list-3 {
+        left: calc(183px + 74.25px + 99.16px);
+    }
+    .dropdown-lists-container .dropdown-list-4 {
+        left: calc(183px + 74.25px + 99.16px + 72.31px);
+    }
+    .dropdown-lists-container .dropdown-list-5 {
+        left: calc(183px + 74.25px + 99.16px + 72.31px + 94.06px);
+    }
+    .dropdown-lists-container .dropdown-list-6 {
+        left: calc(183px + 74.25px + 99.16px + 72.31px + 94.06px + 109.02px);
+    }
+    .dropdown-lists-container .dropdown-list-7 {
+        left: calc(183px + 74.25px + 99.16px + 72.31px + 94.06px + 109.02px + 71.71px);
+    }
+
+
+    /* --------------*
+     *   4.2. Main   *
+     *---------------*/
+    #why-suprfit {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .why-suprfit span, .why-suprfit h1 {
+        font-size: 82px;
+    }
+
+    /* 4.2.1. Banner */
+    #banner {
+        background: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .owl-carousel-banner .owl-item {
+        background: url("../media/Desktop/Banner-1.png");
+        background-size: cover;
+    }
+    .owl-carousel-banner .owl-dots {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        bottom: 60px;
+    }
+    .owl-carousel-banner .owl-dots .owl-dot {
+        background-color: var(--sunset-orange);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 10px;
+        outline: none;
+    }
+    .owl-carousel-banner .owl-dots .owl-dot.active span {
+        background-color: var(--black-rock);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    #banner .banner-link {
+        width: 477px;
+        left: 7.76%;
+        bottom: 304px;
+    }
+    #banner .banner-link .text {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: start;
+    }
+    
+    #banner-2 {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 51.35%;
+                flex: 1 0 51.35%;
+        -webkit-box-ordinal-group: 1;
+            -ms-flex-order: 0;
+                order: 0;
+        margin-top: 206px;
+        height: 1145px;
+        margin-bottom: 171px;
+    }
+    #banner-2 div {
+        left: 136px;
+        top: 45px;
+        position: absolute;
+    }
+    #banner-2 div:nth-child(1) img {
+        width: 980px;
+        height: 1145px;
+    }
+
+    /* 4.2.2. Info */
+    /* 4.2.2.1. Reasons */
+    #why-suprfit > section {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 48.65%;
+                flex: 1 0 48.65%;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        margin-top: 206px;
+    }
+    .reasons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 50px;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 750px;
+    }
+    .reason-wrapper, .reason-wrapper:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+        width: 622px;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .reason-wrapper .reason {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        padding-left: 83px;
+    }
+
+    /* 4.2.2.2. Brands */
+    #carousel-menu-1 {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 100%;
+                flex: 1 0 100%;
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
+    }
+    #carousel-menu-1 .owl-stage-outer {
+        height: 77px;
+    }
+    #carousel-menu-1 .owl-nav button {
+        margin: 0 -10%;
+    }
+    #carousel-menu-1 .owl-nav button:hover {
+        background: none;
+    }
+
+    /* 4.2.2.3. Categories */
+    .why-suprfit-2 {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 100%;
+                flex: 1 0 100%;
+        -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 4;
+                order: 4;
+        margin-top: 160px;
+    }
+    #categories {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 100%;
+                flex: 1 0 100%;
+        -webkit-box-ordinal-group: 6;
+            -ms-flex-order: 5;
+                order: 5;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    #categories a {
+        margin-bottom: 0;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+    #categories a div {
+        width: 100%;
+        height: 100px;
+    }
+    #categories a div span {
+        position: absolute;
+        left: 60px;
+    }
+    #categories a:nth-child(1) {
+        background-position: center;
+        -ms-flex-preferred-size: 40.73%;
+            flex-basis: 40.73%;
+        height: 919px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #categories a:nth-child(2) {
+        background-position: center;
+        -ms-flex-preferred-size: 57.24%;
+            flex-basis: 57.24%;
+        height: 919px;
+    }
+    #categories a:nth-child(3) {
+        background-position: center;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        height: 965px;
+        margin-top: 30px;
+    }
+
+    /* 4.2.3. Sale */
+    .on-sale-now h1 {
+        padding-bottom: 0;
+    }
+
+    /* 4.2.3.1. Items On Sale */
+    #carousel-menu-2 {
+        margin-bottom: 80px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    #carousel-menu-2 .owl-stage-outer {
+        overflow: hidden;
+    }
+    #carousel-menu-2 .owl-carousel-2 .item {
+        overflow: visible;
+    }
+    #carousel-menu-2 .owl-nav {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin: 0;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        bottom: 50%;
+        z-index: -1;
+    }
+    #carousel-menu-2 .owl-nav button {
+        margin: 0 -87px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        outline: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    #carousel-menu-2 .owl-nav button:hover {
+        background: none;
+    }
+    #carousel-menu-2 .owl-nav button img {
+        width: 100%;
+        height: 43px;
+    }
+
+    /* 4.2.3.2. Sign Up Form */
+    #sign-up::after {
+        max-width: 1224px;
+    }
+    .sign-up-box {
+        width: 1346px;
+    }
+    .sign-up-box div:nth-child(2) {
+        margin: 31px auto 61px auto;
+        width: 884px;
+    }
+    .sign-up-box div:nth-child(2) span {
+        line-height: 27px;
+    }
+    .sign-up-box div:nth-child(4) {
+        margin-bottom: 96px;
+    }
+
+
+    /* ----------------*
+     *   4.3. Footer   *
+     *-----------------*/
+    .link-categories {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        margin: 0 auto;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        padding-top: 100px;
+        padding-bottom: 75px;
+    }
+    .links {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+    }
+    .social-media-links {
+        width: 100%;
+    }
+}
